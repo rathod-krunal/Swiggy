@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav {
   display: flex;
-  flex-direction: column;
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, 0.15);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 0px 100px;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  /* border: 4px solid black; */
+  padding: 3px;
+  width: 85px;
+  height: 60px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.location {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.location span {
+  margin: 5px;
+}
+.location > :first-child {
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 18px;
+}
+.location span:nth-child(2) {
+  opacity: 0.5;
+}
+.right-nav {
+  /* border: 2px solid red; */
+  display: flex;
+  padding: 10px;
+  font-size: 18px;
+}
+.right-nav div {
+  margin: 3px 30px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.list-div {
+  /* border: 2px solid red; */
+  margin: 30px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.list-div h1 {
+  margin-left: 100px;
+}
+.lists {
+  display: flex;
+  overflow: scroll;
+  margin: 15px 80px;
+}
+.lists::-webkit-scrollbar {
+  display: none;
+}
+.main-card {
+  /* border: 3px solid black; */
+  margin: 5px 30px;
+  cursor: pointer;
+}
+.img-card {
+  /* border: 2px solid red; */
+  width: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.img-card img {
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-resto-list-main-div {
+  /* border: 2px solid red; */
+  margin: 10px 80px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.top-resto-list-main-div h1 {
+  margin-left: 23px;
+}
+.top-restro-list-map-div {
+  display: flex;
+  /* border: 2px solid red; */
+  overflow: scroll;
+  /* justify-content: space-between; */
+  padding: 23px 10px;
+  align-items: center;
+  margin-top: 5px;
+}
+.top-restro-list-map-div::-webkit-scrollbar {
+  display: none;
+}
+.Top-resto-list {
+  /* border: 2px solid red; */
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.Top-resto-list:hover {
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+.top-resto-img {
+  height: 150px;
+  width: 250px;
+}
+
+.top-resto-img img {
+  border-radius: 12%;
+  width: 100%;
+  height: 100%;
+}
+.details {
+  /* border: 2px solid red; */
+  height: 120px;
+  width: 250px;
+  margin-top: 10px;
+  /* padding: 5px; */
+}
+.details p {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.online-resto-list-main-div {
+  margin: 10px 80px;
+  padding: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; */
+}
+.online-resto-list-main-div h1 {
+  margin-left: 23px;
+}
+.online-restro-list-map-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 23px 10px;
+  margin-top: 5px;
+}
+
+.online-resto-list {
+  /* border: 2px solid red; */
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.online-resto-img {
+  height: 150px;
+  width: 250px;
+}
+
+.online-resto-img img {
+  border-radius: 12%;
+  width: 100%;
+  height: 100%;
+}
+.details {
+  /* border: 2px solid red; */
+  height: 120px;
+  width: 250px;
+  margin-top: 10px;
+  /* padding: 5px; */
+}
+.details p {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.footer-div{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: aliceblue;
+  font-size: 20px;
+}
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 80px;
+  padding: 20px;
+}
+.footer-inner p {
+  opacity:  0.5;
+  font-size: 18px;
+  margin: 10px 0px;
 }
